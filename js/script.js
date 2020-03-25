@@ -5,8 +5,8 @@ $(function() {
         $('.content div.session-title').each(function() {
             var target = $(this).offset().top;
             var id = $(this).attr('id');
-    
-            if (position >= target) {
+            
+            if (position >= target - 100) {
                $('#navbar > ul > li > a').removeClass('active');
                $('#navbar > ul > li > a[href=#' + id + ']').addClass('active');
             }

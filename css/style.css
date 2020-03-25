@@ -1,76 +1,189 @@
+/* 
+  COMP1950 GROUP PROJECT
+*/
+
+@charset "utf-8";
+
+@import url("normalize.css");
+@-ms-viewport {
+	width:device-width;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 body {
-    margin: 0;
-    color: rgb(66, 78, 116);
+	font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-color: rgb(227, 228, 232);	
+	margin: 0;
+}
+.wrapper {
+	margin: 0 auto;
+	background-color: rgb(227, 228, 232);	
+}
+/* TOP RIGHT LINKS */
+header{
+	text-align: right;
+	height: 18px;
+	padding-right: 60px;
+}
+ul li{
+	display: inline;
+	padding-left: 10px;
+}
+ul li a:link, ul li a:visited {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: rgb(105, 105, 105);	
+}
+ul li a:hover {
+	color: rgb(134, 134, 134);
+  }
+
+/* FLEX CONTAINERS */
+main {
+	display: flex;
+	margin: 0 20px;	
+}
+/* FLEX ITEMS */
+.leftbox {	
+	background-color: rgba(107, 117, 144, 0.74);	
+	padding: 30px;
+	color: #FFF;
+}
+.title1{
+	font-size: 60px;
+}
+.title2 {
+	font-size: 40px;
+}
+.rightbox {	
+	flex: 4;	
+	height: 470px;
+	text-align: center;
+	background-color: white;	
 }
 
-#navbar {
-    height: 100%;
-    width: 200px;
-    background-color: rgb(66, 78, 116);
-    position: fixed!important;
-    z-index: 1;
-    overflow: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: rgb(227, 228, 232);
+	justify-content: center;
+	padding-top: 50px;
+	background: url("../images/bcit.png");
+	background-attachment: fixed;
+	background-position: right top; 
+	background-repeat: no-repeat;
+	background-size: auto;
+	height: 100%;
+}
+	  
+.flex-container > div {
+	width: 100px;
+	margin: 10px;	
+	text-align: center;
+	line-height: 75px;
+	font-size: 30px;
 }
 
-#navbar ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.content {
-    margin-left: 200px;
-    padding: 15px;
-    display: grid;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.container {
-    margin: 0 120px;
-}
-
-.page-title-content {
-    padding-bottom: 20px; 
-}
-
-.item-menu {
-    display: block;
+.button {
+	background-color: rgb(155, 166, 196);
+    color: white;
+    height: 170px;
+    width: 40%;
+    font-size: 40px;
+    margin: 5px 10px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
     text-decoration: none;
-    line-height: 60px;
-    text-align: center;
-    font-family: verdana;
-    color: #FFFFFF;
 }
 
-.item-menu:hover,
-.active {
-    background-color: rgb(43, 51, 74);
-    cursor: pointer;
+.button:hover {
+	opacity: 0.9;
+	cursor: pointer;
 }
 
-.lecture-title p{
-    color: rgb(66, 78, 116);
+.leftbox {
+	flex: 3;	
+	height: 470px;
 }
 
-.content-head {
+.additional-links {
+	margin: 0;
+}
+
+a.button {
     display: flex;
-    justify-content: space-between;
+  	align-items: center;
+  	justify-content: center;
 }
 
-.top-links {
-    display: flex;
-    list-style-type: none;
+/* 	RESPONSIVE TRANSITIONS */
+@media screen and (max-width:1000px){
+	h3 {
+		font-size:80%;
+	}
+	.flex-container .button{
+		font-size: 25px;
+	}
+}
+@media screen and (max-width:880px){
+	.flex-container .button{
+		font-size: 90%;
+	}
+}
+@media screen and (max-width:650px){
+	.wrapper{
+		padding-left: 2px;
+	}
+	header{
+		flex-direction:column;	
+		text-align:center;
+		background-color: rgb(15, 73, 94);	
+		padding-top:0.5px;
+		height: 42px;
+
+	}
+	main {
+		flex-direction:column;		
+
+	}
+	.leftbox{
+		order: 1;
+		padding:0px;
+	}
+	.rightbox {
+		order:2;
+		padding: 0px;
+		height:50%;
+	}	
+	.button {
+		width:  100%;
+		margin: 1px;
+		height: 45%;
+		opacity: 0.7;
+	}
+	.flex-container {
+		padding: 0px;
+		width: 100%;
+		margin: 0px;
+		flex-wrap: nowrap;
+		display: block;
+		font-size: 35px;
+		background: url("../images/bcit.png");
+		background-position: bottom; 
+		background-repeat: no-repeat;
+		background-size: auto;
+	}
+	h3 {
+		display: none;
+	}
+
 }
 
-.top-links li a{
-    text-decoration: none;
-    color: rgb(66, 78, 116);
-    margin: 0 5px;
-    font-size: small;
-}
 
-.top-links li a:hover {
-    color: rgb(43, 51, 74);
-}

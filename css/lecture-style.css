@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    color: rgb(66, 78, 116);
+}
+
+#navbar {
+    height: 100%;
+    width: 200px;
+    background-color: rgb(66, 78, 116);
+    position: fixed!important;
+    z-index: 1;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.content {
+    margin-left: 200px;
+    padding: 15px;
+    display: grid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    margin: 0 120px;
+}
+
+.page-title-content {
+    padding-bottom: 20px; 
+}
+
+.item-menu {
+    display: block;
+    text-decoration: none;
+    line-height: 60px;
+    text-align: center;
+    font-family: verdana;
+    color: #FFFFFF;
+}
+
+.item-menu:hover,
+.active {
+    background-color: rgb(43, 51, 74);
+    cursor: pointer;
+}
+
+.lecture-title p{
+    color: rgb(66, 78, 116);
+}
+
+.content-head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-links {
+    display: flex;
+    list-style-type: none;
+}
+
+.top-links li a{
+    text-decoration: none;
+    color: rgb(66, 78, 116);
+    margin: 0 5px;
+    font-size: small;
+}
+
+.top-links li a:hover {
+    color: rgb(43, 51, 74);
+}
