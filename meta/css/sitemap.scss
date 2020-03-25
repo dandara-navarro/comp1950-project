@@ -1,0 +1,128 @@
+
+@import url("normalize.css");
+
+/***** CSS for introduction page*****/
+
+$primaryColor: #434f74;
+$accent_color: rgba(126, 63, 185, 0.719);
+
+html {
+    box-sizing: border-box;
+    /* scroll-behavior: smooth; */
+    color: $primaryColor;
+    font-size: 1.1em;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+
+header {
+  margin: 7% auto;
+  text-align: center;
+}
+
+.main-nav {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        list-style: none;
+        padding-left: 0px;
+
+        li {
+        margin: 15px;
+        border-radius: 5px;
+        &:hover {
+            transform: scale(1.05) rotate(9deg);
+        }
+        }
+    }
+    button {
+        background-color: $primaryColor;
+        border: none;
+        font-size: 1.5em; 
+        color: white;
+        cursor: pointer;
+    }
+    a { 
+        text-decoration: none;
+        display: block;
+        padding: 5px 10px 5px 10px;
+        transition: transform 0.3s;
+        &:link {
+            color: $primaryColor;
+        }
+        &:visited {
+            color: $primaryColor;
+        }
+        &:hover {
+            color: $accent_color;
+            transform: rotate(10deg) scale(1.2);
+        }
+    }
+    .active {
+        background-color: $primaryColor;
+        a:link {
+        color: #FFFFFF;
+        }
+        a:visited {
+        color: #FFFFFF;
+        }
+    }
+}
+
+
+
+.menu {
+  position: fixed;
+  top: 1%;
+  left: 1%;
+  z-index: 1000;
+}
+
+.responsive  {
+  flex-direction: column;
+  transform: translate (100 25);
+
+  li {
+    border: 1px solid $primaryColor;
+    border-radius: 0px;
+    margin: 0px;
+    text-align: center;
+    
+    
+    &:hover {
+      transform: scale(1) rotate(0deg);
+      background-color: $primaryColor;
+      color: #FFFFFF;
+
+    }
+  a {
+    width: 100%;
+    padding: 8px 40px;
+    &:hover {
+      transform: scale(1) rotate(0);
+      color: #FFFFFF;
+    }
+  }
+    
+  }
+}
+
+.inactive {
+  display: none;
+}
+
+
+
+// .sitemap {
+//     margin-left: 35%;
+//     margin-right: 0;
+
+// }
+
+

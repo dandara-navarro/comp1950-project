@@ -1,3 +1,17 @@
+/* 
+  COMP1950 GROUP PROJECT
+  Authors: Connie Cheng 
+           Dandara Navarro
+           Janet Sinocruz   
+*/
+
+@charset "utf-8";
+
+@import url("normalize.css");
+@-ms-viewport {
+	width:device-width;
+}
+
 body {
     margin: 0;
     color: rgb(66, 78, 116);
@@ -73,4 +87,41 @@ body {
 
 .top-links li a:hover {
     color: rgb(43, 51, 74);
+    font-weight:bold;
+}
+
+
+@media screen and (max-width:650px){
+    #navbar {
+        display: none;
+    }
+    div .container, .content {
+        margin: 0px;
+        padding:0px 10px;;
+		flex-direction:column;	
+    }
+    .content-head {
+        background-color: rgba(66, 78, 116, 0.514);
+        padding: 0px 5px;
+    }
+}
+
+
+@media print { 
+    #navbar {
+        display: none;
+    }
+    div .container, .content {
+        width: auto;
+		margin: 0;
+        padding: 0;
+        float: none;
+    }
+    h2 {
+        page-break-after: avoid;
+    }
+    a[href^="http"]:after{
+		content: " (URL: " attr(href) ") ";   
+    }
+
 }

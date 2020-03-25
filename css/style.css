@@ -1,5 +1,8 @@
 /* 
   COMP1950 GROUP PROJECT
+   Authors: Connie Cheng 
+            Dandara Navarro
+            Janet Sinocruz   
 */
 
 @charset "utf-8";
@@ -28,7 +31,7 @@ body {
 header{
 	text-align: right;
 	height: 18px;
-	padding-right: 60px;
+	padding-right:70px;
 }
 ul li{
 	display: inline;
@@ -38,16 +41,15 @@ ul li a:link, ul li a:visited {
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: bold;
-	color: rgb(105, 105, 105);	
+	color: rgb(168, 156, 216);	
 }
 ul li a:hover {
 	color: rgb(134, 134, 134);
-  }
-
+}
 /* FLEX CONTAINERS */
 main {
 	display: flex;
-	margin: 0 20px;	
+	margin: 0 20px;		
 }
 /* FLEX ITEMS */
 .leftbox {	
@@ -64,10 +66,9 @@ main {
 .rightbox {	
 	flex: 4;	
 	height: 470px;
-	text-align: center;
+	text-align: center;	
 	background-color: white;	
 }
-
 .flex-container {
 	display: flex;
 	flex-wrap: wrap;
@@ -75,13 +76,11 @@ main {
 	justify-content: center;
 	padding-top: 50px;
 	background: url("../images/bcit.png");
-	background-attachment: fixed;
-	background-position: right top; 
+	background-position: bottom; 
 	background-repeat: no-repeat;
 	background-size: auto;
 	height: 100%;
 }
-	  
 .flex-container > div {
 	width: 100px;
 	margin: 10px;	
@@ -89,7 +88,12 @@ main {
 	line-height: 75px;
 	font-size: 30px;
 }
-
+.button a {
+    display: flex;
+  	align-items: center;
+	justify-content: center;
+	padding: 50px 20px;
+}
 .button {
 	background-color: rgb(155, 166, 196);
     color: white;
@@ -97,44 +101,73 @@ main {
     width: 40%;
     font-size: 40px;
     margin: 5px 10px;
-    opacity: 0.6;
+    opacity: 0.8;
     transition: 0.3s;
     display: inline-block;
     text-decoration: none;
 }
-
 .button:hover {
 	opacity: 0.9;
 	cursor: pointer;
 }
-
+.rightbox .flex-container a{
+	color: rgba(248, 244, 244, 0.822);
+	font-weight: bold;
+	text-decoration: none;
+}
 .leftbox {
 	flex: 3;	
 	height: 470px;
 }
-
 .additional-links {
 	margin: 0;
 }
 
-a.button {
-    display: flex;
-  	align-items: center;
-  	justify-content: center;
+/* FOOTER */
+footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 0px;
+	padding: 1% 3% 1% 3%;
+	background-color: #434f74;
+	color: #ffffff;
+  }
+  
+  footer section {
+	flex: 1;
+	justify-content: space-around;
+	padding: 0 3% 0 3%;
+  }
+  
+  footer section ul {
+	list-style: none;
+	padding-left: 0;
+	display: flex;
+	flex-direction: column;
+  }
+  
+.column {
+	float: left;
+	width: 33.33%;
+	padding: 0px 40px;
+}
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+footer ul li {
+	display: block;
 }
 
 /* 	RESPONSIVE TRANSITIONS */
-@media screen and (max-width:1000px){
-	h3 {
+@media screen and (max-width:1100px){
+	.leftbox h3 {
 		font-size:80%;
 	}
 	.flex-container .button{
-		font-size: 25px;
-	}
-}
-@media screen and (max-width:880px){
-	.flex-container .button{
-		font-size: 90%;
+		font-size: 100%;
 	}
 }
 @media screen and (max-width:650px){
@@ -144,18 +177,20 @@ a.button {
 	header{
 		flex-direction:column;	
 		text-align:center;
-		background-color: rgb(15, 73, 94);	
-		padding-top:0.5px;
-		height: 42px;
-
+		background-color: rgb(60, 99, 126);	
+		height: 30px;
+		margin-top:0px;
+		padding-top:8px;
 	}
 	main {
 		flex-direction:column;		
-
 	}
 	.leftbox{
 		order: 1;
-		padding:0px;
+		padding: 10px;
+	}
+	.leftbox p {
+		font-size: 80%;
 	}
 	.rightbox {
 		order:2;
@@ -165,8 +200,11 @@ a.button {
 	.button {
 		width:  100%;
 		margin: 1px;
-		height: 45%;
-		opacity: 0.7;
+		height: 100%;
+		opacity: 0.8;
+	}
+	.button a {
+		padding: 0px;
 	}
 	.flex-container {
 		padding: 0px;
@@ -180,10 +218,14 @@ a.button {
 		background-repeat: no-repeat;
 		background-size: auto;
 	}
-	h3 {
-		display: none;
+	footer .column {
+		width: 100%;
+		padding: 10px;
+		border-bottom: 1px dashed rgba(190, 190, 190, 0.336);
 	}
-
 }
+
+
+
 
 
