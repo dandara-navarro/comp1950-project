@@ -1,35 +1,33 @@
 <footer>
 		<section>
-			<h4>About COMP 1950</h4>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-				incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-				exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
-				irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
-				nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
-				officia deserunt mollit anim id est laborum.
-			</p>
-		</section>
-		<section class="right-map">
-			<div class-"site-map">
-				<h4>Site Map</h4>
+		<div class="row">
+			<div class="column">
+			 	 <h2>About COMP 1950</h2>
+			 	 <p>Nulla tincidunt justo justo. Nunc ac velit eu tortor laoreet efficitur sit amet nec dolor. Integer sed mi sollicitudin, finibus felis ornare, tempus arcu. Aliquam ultricies pretium sapien sed commodo. Integer dictum ornare lacus, vitae auctor mi lobortis ut. Donec et elementum magna. Nulla viverra dapibus lectus, vitae pretium nulla posuere eu. Aliquam non magna sed eros lacinia congue. 
+			 	 </p>
+			</div>
+
+			<div class="column">
+				<h2>Site Map</h2>
 				<nav>
-					<ul>
-						<li><a href="#">Lecture</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Resource</a></li>
-						<li><a href="#">BCIT</a></li>
-					</ul>
+                    <ul>
+                        <li><a href="sublinks/lectures.html">Lectures</a></li>
+                        <li><a href="sublinks/resources.html">Resources</a></li>
+                        <li><a href="sublinks/about.html">About</a></li>
+                        <li><a href="http://www.bcit.ca" target="_blank">BCIT</a></li>
+                    </ul>
 				</nav>
 			</div>
-			<div class="map-contact">
-				<h4>Contact</h4>
-				<ul>
-					<li>Jeffery Parker</li>
-					<li><a href="mailto: jeffrey_parker@bcit.ca">jeffrey_parker@bcit.ca</a></li>
-					<li>Office Hours:</li>
-					<li><a href="learn.bcit.ca">Learning Hub</a></li>
-				</ul>
+
+			<div class="column">
+				<h2>Contact</h2>
+                <ul>
+                    <li>Jeffery Parker</li>
+                    <li><a href="mailto: jeffrey_parker@bcit.ca">jeffrey_parker@bcit.ca</a></li>
+                    <li>Office Hours:</li>
+                    <li><a href="https://learn.bcit.ca/">Learning Hub</a></li>
+                </ul>
+			</div>
 			</div>
 		</section>
-	</footer>    
+	</footer>

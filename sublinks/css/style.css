@@ -68,6 +68,54 @@ body {
     color: rgb(66, 78, 116);
 }
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+.lecture-title p:hover {
+    cursor: pointer;
+    color: rgb(43, 51, 74)
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content ul {
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-content ul li {
+    list-style-type: none;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.dropdown-content ul li:hover {
+    background-color: rgb(43, 51, 74);
+    cursor: pointer;
+}
+
+.dropdown-content ul li:hover a {
+    color: #FFF;
+}
+
+.dropdown-content ul li a {
+    text-decoration: none;
+    color:  rgb(43, 51, 74);
+}
+
 .content-head {
     display: flex;
     justify-content: space-between;

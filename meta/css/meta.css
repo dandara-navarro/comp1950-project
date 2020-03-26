@@ -5,7 +5,7 @@ Author: Connie Cheng
 /***** CSS for introduction page*****/
 html {
   box-sizing: border-box;
-  /* scroll-behavior: smooth; */
+  background-color: #FFFFFF;
   color: #434f74;
   font-size: 1.1em;
 }
@@ -48,6 +48,8 @@ nav button {
   font-size: 1.5em;
   color: white;
   cursor: pointer;
+  right: 1%;
+  position: fixed;
 }
 
 main {
@@ -98,15 +100,17 @@ a:hover {
   flex-direction: column;
   text-align: center;
   font-family: "Roboto", Tahoma, sans-serif;
+  padding-bottom: 10%;
   margin: 0 3%;
 }
 
-.item h2 {
+.item h1, .item h2, .item h3 {
   font-family: "Times New Roman", serif;
 }
 
 .item li {
   text-align: left;
+  margin-bottom: 5%;
 }
 
 .item div {
@@ -120,13 +124,15 @@ a:hover {
 .menu {
   position: fixed;
   top: 1%;
-  left: 1%;
+  right: 1%;
   z-index: 1000;
 }
 
 .responsive {
   flex-direction: column;
   transform: translate 100 25;
+  margin-top: 32px;
+  position: relative;
 }
 
 .responsive li {

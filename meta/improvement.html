@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<!--
+    Author: Connie Cheng
+    COMP 1950 Project - Meta
+-->
+<html lang="en">
+    <head>
+        <title>Meta | Proporsal - Site Improvement</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" /> 
+        <link rel="stylesheet" href="css/improvement.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:light&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/c41911c66d.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Site Improvement</h1>
+        </header>
+        <nav>
+            <ul class="main-nav">
+                <li><a href="introduction.html" >Team</a></li>
+                <li><a href="sitemap.html">Site Map</a></li>
+                <li class="active"><a href="improvement.html">Proposal</a></li>
+                <li><a href="../index.html">Prototype</a></li>
+            </ul>
+            <div class="menu inactive">
+                <button class="btn-toggle-nav">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="responsive inactive">
+                    <li class="active"><a href="introduction.html" >Team</a></li>
+                    <li><a href="sitemap.html">Site Map</a></li>
+                    <li><a href="improvement.html">Proposal</a></li>
+                    <li><a href="../index.html">Prototype</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <article>
+                <div id="usability">
+                    <h2>Usability </h2>
+                    <p>The initial design of COMP 1950 is clutter with lots of information 
+                        and it is confusing for first time users to find information they 
+                        need. For those who have been to the web page, it often requires a 
+                        lot of clicking and scroll in order to find the information they 
+                        need. In our newly designed page, we simply the user interface so 
+                        that users can easily navigate to different section and find the 
+                        information they need.
+                    </p>
+                    
+                    <h3>Landing Page</h3>
+                    <ul>
+                        <li>
+                            Simplified landing page with visual and easy-to-find 
+                            button provide quick and easy access to different pages of 
+                            the webpage.
+                        </li>
+                        <li>
+                            Reorganize information so it is not clutter and easy to read. 
+                        </li>
+                        <li>
+                            Short summery of the course and easy-to-find contact information 
+                            of the instructor at the footer.
+                        </li>
+                        <li>
+                            Include image and comfortable color scheme to make webpage more 
+                            sophisticated and inviting. As this is a web design and development 
+                            course, a more sophisticate webpage will boost users’ confidence 
+                            in the course being offer. Using BCIT colour scheme – consistent 
+                            design to remind user that this is part of BCIT web page. 
+                        </li>
+                        <li>
+                            Website is responsive: it can be view in different size of device 
+                            without issue with content being cut off or difficult to read.  This 
+                            enable users to check the website for quick access or study using 
+                            their mobile devices.
+                        </li>
+                    </ul>
+                    
+                    <div id="content">
+                        <h3>Content Page: Lecture/About/Resource</h3>
+                        <ul>
+                            <li>
+                                Simple design separate bookmark from contact using colors.
+                            </li>
+                            <li>
+                                Bookmark link on left panel for easy access to different 
+                                section of the lecture without excessive scrolling. It also 
+                                shows which section the user is currently reading.
+                            </li>
+                            <li>
+                                Links to different lecture on the top left corner – user can 
+                                jump to different lecture easily
+                            </li>
+                            <li>Easy-to-find links to other web pages on the top right corner</li>
+                            <li>
+                                Code samples and home pdf or any other lecture materials can be 
+                                downloaded at the end of the lecture page
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div><img src="image/usability.jpg" alt="Illustration of Usability"></div>
+            </article>
+            <article>
+                <div>
+                    <h2>SEO</h2>
+                    <p>
+                        To ensure the page is always on the top of the relevant search result, 
+                        we made the following changes to improve Search Engine Optimization:
+                    </p>
+                    <ul>
+                        <li>
+                            Webpage is set up in HTML – the standard HTML version that W3C 
+                            recommends. Content marked up in HTML 5 are more semantic and future 
+                            proof. The new tags from HTML 5 provides more information for search 
+                            engine to identify and sort our website according to our content. As 
+                            this is commonly used across browsers, we can expect the structure of 
+                            the document will be consistent across browsers. 
+                        </li>
+                        <li>
+                            Webpage is also set up in CSS3. Although this is not the current W3C 
+                            recommendation, but it provides more control over the layer and style of 
+                            the web page. It is also mostly supported across browser and we can expect 
+                            our layout will be consistent across browser.
+                        </li>
+                        <li>
+                            We used Character Set and lang Attribute to indicate how our content 
+                            should be rendered in what language to ensure all content is displayed properly.
+                        </li>
+                        <li>
+                            We set up title and link address with descriptive wording so that it is obvious 
+                            to user and search engine on what the web page is about. 
+                        </li>
+                        <li>
+                            To decrease site load time, css codes are minified. 
+                        </li>
+                        <li>
+                            Links to BCIT webpage – which is a reputable web site which would help boost our site’s reputation.
+                        </li>
+                    </ul>
+                </div>
+                <div><img src="image/seo.jpg" alt="SEO"></div>
+            </article>
+        </main>
+
+    </body>
+
+</html>
